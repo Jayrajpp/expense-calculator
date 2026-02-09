@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense, BMI & Calories Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Expense, BMI & Calories Calculator</h1>
+
+    <!-- Expense Calculator -->
+    <div class="card">
+        <h2>💰 Expense Calculator</h2>
+        <input type="text" id="expenseName" placeholder="Expense Name">
+        <input type="number" id="expenseAmount" placeholder="Amount">
+        <button onclick="addExpense()">Add Expense</button>
+        <ul id="expenseList"></ul>
+        <h3>Total: ₹ <span id="totalExpense">0</span></h3>
+    </div>
+
+    <!-- BMI Calculator -->
+    <div class="card">
+        <h2>⚖️ BMI Calculator</h2>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <p id="bmiResult"></p>
+    </div>
+
+    <!-- Calories Calculator -->
+    <div class="card">
+        <h2>🔥 Calories Calculator</h2>
+        <input type="number" id="age" placeholder="Age">
+        <input type="number" id="calWeight" placeholder="Weight (kg)">
+        <input type="number" id="calHeight" placeholder="Height (cm)">
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <button onclick="calculateCalories()">Calculate Calories</button>
+        <p id="calorieResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
